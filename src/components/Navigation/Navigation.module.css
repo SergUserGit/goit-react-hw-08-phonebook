@@ -1,0 +1,19 @@
+.linkHome {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.mainNav {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.contactsNav {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+}

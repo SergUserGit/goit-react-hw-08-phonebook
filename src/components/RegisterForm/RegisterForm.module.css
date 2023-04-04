@@ -1,0 +1,23 @@
+.labelRegister {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputRegister {
+  max-width: 300px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.buttonRegister {
+  max-width: 100px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}

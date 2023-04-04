@@ -6,7 +6,6 @@ import { Suspense } from 'react';
 export const Layout = () => {
   return (
     <div>
-      <AppBar />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
@@ -14,3 +13,4 @@ export const Layout = () => {
   );
 };
 //  <Toaster position="top-right" reverseOrder={false} />
+//  <AppBar />

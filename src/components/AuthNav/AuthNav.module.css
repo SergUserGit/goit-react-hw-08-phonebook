@@ -1,0 +1,12 @@
+.authBlock {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.authLink {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+}

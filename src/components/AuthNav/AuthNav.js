@@ -3,11 +3,11 @@ import css from './AuthNav.module.css';
 
 export const AuthNav = () => {
   return (
-    <div>
-      <NavLink className={css.link} to="/register">
+    <div className={css.authBlock}>
+      <NavLink className={css.authLink} to="/register">
         Register
       </NavLink>
-      <NavLink className={css.link} to="/login">
+      <NavLink className={css.authLink} to="/login">
         Log In
       </NavLink>
     </div>

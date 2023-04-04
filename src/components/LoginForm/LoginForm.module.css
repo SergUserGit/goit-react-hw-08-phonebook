@@ -1,0 +1,23 @@
+.labelLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputLogin {
+  max-width: 300px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.buttonLogin {
+  max-width: 100px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}

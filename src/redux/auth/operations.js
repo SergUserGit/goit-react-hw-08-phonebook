@@ -15,13 +15,10 @@ export const register = createAsyncThunk(
   'auth/register',
   async (credentials, thunkAPI) => {
     try {
-      console.log('Все правильно 1');
       const result = await axios.post('/users/signup', credentials);
       setAuthHeader(result.data.token);
       return result.data;
     } catch (error) {
-      console.log(credentials);
-      console.log(error);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -31,12 +28,10 @@ export const logIn = createAsyncThunk(
   'auth/login',
   async (credentials, thunkAPI) => {
     try {
-      console.log('Все правильно 2');
       const result = await axios.post('/users/login', credentials);
       setAuthHeader(result.data.token);
       return result.data;
     } catch (error) {
-      console.log('Неправильно ', credentials);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -44,7 +39,6 @@ export const logIn = createAsyncThunk(
 
 export const logOut = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
   try {
-    console.log('Все правильно 3');
     await axios.post('/users/logout');
     clearAuthHeader();
   } catch (error) {
@@ -57,7 +51,6 @@ export const refreshUser = createAsyncThunk(
   async (_, thunkAPI) => {
     const state = thunkAPI.getState();
     const persistedToken = state.auth.token;
-    console.log(persistedToken);
     if (persistedToken === null) {
       return thunkAPI.rejectWithValue('Unable to fetch user');
     }

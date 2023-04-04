@@ -1,0 +1,17 @@
+.userMail {
+  font-size: 25px;
+}
+
+.userButton {
+  cursor: pointer;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  max-width: 100px;
+}
+
+.userMenuBlock {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
