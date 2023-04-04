@@ -32,7 +32,6 @@ const ContactForm = () => {
       alert(name + ' is already in contacts.');
       return;
     }
-    // const jsonDate = new Date().toJSON();
     const newObj = { name, number };
     dispatch(addContact(newObj));
     reset();
